@@ -1,0 +1,847 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tauri&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+:root {
+	--f1-color: #F4f1de;
+	--f2-color: #9ea4f7;
+}
+
+html {
+	overflow-x: hidden !important;
+	scroll-behavior: smooth;
+	
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+img {
+	width: 100%;
+}
+
+p,
+li,
+a {
+	font-size: 1rem;
+	font-family: "Bebas Neue", sans-serif;
+
+
+}
+
+body {
+overflow-x: hidden !important;
+	scrollbar-width: none;
+
+}
+
+
+/* shap diveder code ........................... */
+.custom-shape-divider-bottom-1742027423 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1742027423 svg {
+	position: relative;
+	display: block;
+	width: calc(132% + 1.3px);
+	height: 150px;
+}
+
+.custom-shape-divider-bottom-1742027423 .shape-fill {
+	fill: #F4f1de;
+}
+
+
+
+/*   nav bar style  .................... */
+header {
+	width: 100vw;
+	position: fixed;
+	box-shadow: 0px 8px 50px black;
+	padding: 0 4vw 0 2vw;
+	width: 100vw;
+	background-color: var(--f1-color);
+	z-index: 10;
+	overflow-x: hidden;
+
+}
+
+
+.nav {
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: .2fr 1fr;
+	align-items: center;
+	justify-content: start;
+
+}
+
+.nav i {
+	text-align: end;
+	display: none;
+}
+
+.nav-content {
+	z-index: 2000;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 3rem;
+	
+
+}
+
+
+.nav-content li a {
+	color: #000;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 1.4rem;
+	transition: all .2s ease-in-out;
+}
+
+.nav-content li a:hover {
+	text-decoration: underline;
+	color: var(--f2-color);
+}
+
+#cmenu {
+	display: none;
+}
+.nav .logo img{
+font-size: 110rem;
+}
+
+/*  hero section style................... */
+
+.hero-section {
+	width: 100vw;
+	background-image: url("img/heroimg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: var(--f1-color);
+	padding: 7rem 4vw 6rem 4vw;
+	display: flex;
+	justify-content: start;
+	flex-direction: row;
+	position: relative;
+}
+
+.hero-section .hero-left {
+	padding-top: 7rem;
+}
+
+.hero-section .hero-left span {
+
+	font-family: cursive;
+	font-weight: 200;
+	letter-spacing: 9px;
+	font-size: 1rem;
+
+}
+
+.hero-section .hero-left h1 {
+	font-family: "Tauri", sans-serif;
+	font-size: 3.2rem;
+	letter-spacing: 2px;
+	font-weight: 900;
+	padding: 2rem 0 3rem 0;
+
+}
+
+.hero-section .hero-left p {
+
+	line-height: 1.7rem;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 4px;
+	word-spacing: 5px;
+	font-size: .9rem;
+	font-weight: 500;
+
+
+}
+
+.hero-section .hero-left button a {
+	display: inline-block;
+	margin: 5rem auto;
+	padding: .5rem 0;
+	background-color: var(--f1-color);
+	color: #000;
+	width: 8rem;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	transition: all .3s ease-in;
+}
+
+.hero-section .hero-left button :hover {
+	background-color: var(--f1-color);
+	color: var(--f2-color);
+	box-shadow: 6px 3px 10px var(--f1-color);
+
+}
+
+
+.hero-section .hero-right img {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+#about{
+	width: 100vw;
+	padding: 3rem 4vw 4rem 4vw;
+	background-color: var(--f1-color);
+	color: #000;
+
+}
+
+#about #heading1,#course #heading2,#gallery #heading3,#contact #heading4{
+	font-family: "Tauri", sans-serif;
+	font-size: 2.9rem;
+	letter-spacing: 2px;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 3rem;
+}
+#about #heading1::after,#course #heading2::after,#gallery #heading3::after{
+	content: "";
+	width: 20vw;
+	height: 7px;
+	display: block;
+	margin: 10px auto 0;
+	background-color: var(--f2-color);
+	border-radius: 5px;
+}
+#contact #heading4::after{
+	content: "";
+	width: 20vw;
+	height: 7px;
+	display: block;
+	margin: 10px auto 0;
+	background-color: var(--f1-color);
+	border-radius: 5px;
+}
+.about {
+
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+
+}
+
+.about .about-right h2 {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 2.8rem;
+	font-weight: 800;
+	padding: 1.5rem 0 2rem 0;
+	word-spacing: 9px;
+	letter-spacing: 4px;
+}
+
+.about .about-right p {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	word-spacing: .5rem;
+	letter-spacing: 2px;
+	line-height: 1.55rem;
+}
+
+.about .about-right .social-content {
+	margin: 2.8rem auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+
+
+}
+
+.about .about-right .social-content a i {
+	border-radius: 50%;
+	transition: all .3s ease-in;
+	padding: .5rem;
+}
+
+.about .about-right .social-content a {
+	color: var(--f2-color);
+	font-size: 1.8rem;
+
+}
+
+.about .about-right .social-content a i:hover {
+	background-color: var(--f2-color);
+	color: var(--f1-color);
+	box-shadow: 3px 3px 10px var(--f2-color);
+}
+
+#course{
+	width: 100vw;
+	background-color: var(--f1-color);
+	padding: 5rem 4vw 5rem 4vw;
+}
+.course {
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	row-gap: 4rem;
+
+}
+
+.course .course-box {
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: .7fr 1fr;
+	justify-content: center;
+	align-items: start;
+	gap: 2rem;
+	padding: 2rem 0 2rem 0;
+}
+
+.course .course-box .course-img {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+}
+
+.course .course-box .course-content {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	gap: 2rem;
+	flex-direction: column;
+}
+
+.course .course-box img {
+
+	object-fit: contain;
+	transition: all .5s linear;
+	border-radius: 10px;
+	width: 70%;
+	height: 70%;
+
+}
+
+.course .course-box h2 {
+	font-family: "Bebas Neue", sans-serif;
+	letter-spacing: 4px;
+	font-size: 2.4rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	color: #000;
+
+}
+
+.course .course-box p,
+p span {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.7rem;
+	font-size: .8rem;
+	font-weight: 300;
+	word-spacing: 4px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	margin-top: -2rem;
+	color: #000000;
+}
+
+.course .course-box p span {
+	font-size: 1rem;
+	font-weight: 600;
+	text-decoration: wavy;
+}
+
+.course .course-box button {
+	width: 100%;
+}
+
+.course .course-box button a {
+	padding: 0 1.6rem;
+	background-color: var(--f2-color);
+	color: #000;
+	width: 7.3rem;
+	font-size: 1.6rem;
+	border-radius: 15px;
+	transition: all .3s ease-in;
+	letter-spacing: 2px;
+}
+
+.course .course-box button a:hover {
+	background-color: var(--f1-color);
+	color: var(--f2-color);
+	box-shadow: 5px 8px 10px var(--f1-color);
+}
+
+
+#gallery{
+	width: 100vw;
+	background-color: var(--f1-color);
+	padding: 6.5rem 4vw 3rem 4vw;
+}
+.gallery {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+
+}
+.gallery .img-div {
+	width: 100%;
+	height: 100%;
+	border: 2px solid black;
+	overflow: hidden;
+}
+
+.gallery .img-div img {
+	width: 100%;
+	height: 100%;
+	transition: all .4s ease-in;
+}
+.gallery .img-div img:hover {
+scale: 1.3;
+}
+.gallery .img-div {
+	object-fit: contain;
+	border: 2px solid black;
+	overflow: hidden;
+}
+
+/* contact section start bro */
+
+
+#contact{
+	width: 100vw;
+	padding: 8rem 4vw 5rem 4vw;
+	background-color: var(--f2-color);
+}
+.contact {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	flex-direction: column;
+
+}
+
+.contact .contact-left .left-content li {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+	padding: .7rem 0;
+
+}
+
+.contact .contact-left .left-content {
+	padding: 0 0 0 2rem;
+}
+
+.contact .contact-right {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact .contact-right input,
+textarea {
+	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
+	word-spacing: 4px;
+	letter-spacing: 2px;
+	width: 100%;
+	margin: .3rem;
+	padding: .7rem;
+	border-radius: 10px;
+	background-color: var(--f2-color);
+	color: #000;
+
+}
+
+.contact .contact-right input::placeholder,
+textarea::placeholder {
+
+	color: #000;
+}
+
+.contact .contact-right input:focus,
+textarea:focus {
+	border: none;
+	color: #000;
+}
+
+.contact .contact-right button {
+	font-family: "Roboto", sans-serif;
+	padding: .5rem 1rem;
+	width: 7rem;
+	font-size: 1.1rem;
+	border-radius: 15px;
+	margin: 2.5rem auto;
+	background-color: var(--f1-color);
+	color: #000;
+	transition: all .3s ease-in;
+}
+
+.contact .contact-right button:hover {
+	background-color: var(--f1-color);
+	color: var(--f2-color);
+	box-shadow: 6px 3px 10px var(--f1-color);
+}
+
+
+.contact .contact-left .left-content li p {
+	font-size: 1.3rem;
+	font-weight: 100;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+	color: #000;
+}
+
+.contact .contact-left .left-content li i {
+	font-size: 1.3rem;
+	color: #000;
+}
+
+.footer {
+	width: 100vw;
+	padding: 0 4vw 0 4vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	background-color: #000;
+flex-wrap: wrap;
+}
+
+.footer .social-content {
+	padding: 4rem 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1.4rem;
+
+
+}
+
+.footer .social-content a i {
+
+	font-size: 1.7rem;
+
+}
+
+.footer a i {
+	font-size: 1.8rem;
+	color: var(--f1-color);
+	transition: all .3s ease-in;
+}
+
+.footer p {
+	display: inline;
+	line-height: 8px;
+	word-spacing: 3.5px;
+	letter-spacing: 2px;
+	color: var(--f1-color);
+	align-items: center;
+	
+}
+
+.footer a i:hover {
+	color: var(--f2-color);
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px) {
+	.hero-section .hero-left h1{
+		font-size: 3rem;
+	}
+.contact{
+grid-template-columns: 1fr;
+}
+.contact .contact-left .left-content li,.contact .contact-right{
+padding: .7rem 0 0.7rem 5rem;
+
+}
+.contact .contact-right input,
+textarea{
+	width: 80%;
+}
+.contact .contact-right input,
+textarea ,.contact .contact-left .left-content li p{
+	font-size: 1.5rem;
+}
+.footer {
+	flex-direction:column;
+	gap: 3rem;
+}
+
+.footer .social-content {
+	padding: 3rem 0 0 0;
+
+}
+}
+
+@media screen and (max-width:830px) {
+
+	.hero-section {
+		padding: 7rem 6vw 6rem 6vw;
+		flex-direction: column-reverse;
+	}
+	.hero-section .hero-left {
+		padding: 3rem;
+	}
+	.about {
+		grid-template-columns: 1fr ;
+	}
+	#about{
+		padding: 3rem 4vw 4rem 4vw !important;
+}
+.about .about-right .social-content {
+	gap: 1.1rem;
+
+}
+.gallery {
+	grid-template-columns: 1fr 1fr;
+}
+
+}
+@media screen and (max-width:740px) {
+	.nav .bx-menu {
+		display: inline-block;
+		text-align: end;
+		font-size: 2rem;
+
+	}
+	.nav-content {
+		display: none;
+	}
+
+	.nav .omenu{
+
+		display: none;
+	}
+
+	.nav .nav-content-o {
+		z-index: 100;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: var(--f1-color);
+		width: 90vw;
+		transition: all 1s ease-in;
+		margin-top: 5rem;
+		padding-bottom: 2rem;
+
+	}
+
+	.nav .nav-content-o li {
+		transition: all 1s ease-in;
+	}
+
+	.nav #cmenu {
+		display: block;
+		font-size: 5rem;
+	}
+
+	header {
+		padding-left: 2rem;
+
+	}
+
+	.nav {
+		grid-template-columns: .3fr 1fr;
+	}
+
+	.nav .logo {
+		width: 100%;
+	}
+}
+
+
+
+@media screen and (max-width:622px) {
+	#about #heading1,#course #heading2,#gallery #heading3,#contact #heading4,.about .about-right h2{
+		font-size: 2.3rem;
+	}
+
+	.hero-section .hero-left span {
+		font-size: .9rem;
+	}
+	.hero-section .hero-left h1{
+		font-size: 2.3rem;
+	}
+	.hero-section .hero-left p{
+		font-size: .9rem;
+	}
+	.hero-section .hero-left{
+		padding: 1.5rem;
+	}
+	.about .about-right p{
+		font-size: .9rem;
+	}
+	
+	.course .course-box{
+		grid-template-columns:1fr;
+	}
+	.course .course-box .course-content{
+		padding: 0 1rem 1rem 3rem;
+	}
+	.course .course-box h2{
+		align-items: center;
+		font-size: 2.1rem;
+	margin: 1rem auto;
+	}
+	.contact .contact-left .left-content li,.contact .contact-right{
+		padding: .7rem 0 0.7rem ;
+		
+		}
+		.contact .contact-right input,
+		textarea{
+			width: 90%;
+		}
+		.contact .contact-right input,
+		textarea ,.contact .contact-left .left-content li p{
+			font-size: 1.2rem;
+		}
+		.gallery {
+			grid-template-columns: 1fr;
+		}
+		.nav {
+			grid-template-columns: .3.3fr 1fr;
+		}
+	}
+
+
+@media screen and (max-width:522px) {
+
+	#about #heading1,#course #heading2,#gallery #heading3,#contact #heading4{
+		font-size: 2rem;
+	}
+	.about .about-right h2{
+		font-size: 1.8rem;
+	}
+	.hero-section .hero-left h1{
+		font-size: 2rem;
+	}
+	.hero-section .hero-left{
+		padding: 1rem;
+	}
+
+
+		.contact .contact-right input,
+		textarea ,.contact .contact-left .left-content li p{
+			font-size: 1rem;
+		}
+		.nav {
+			grid-template-columns: .3.6fr 1fr;
+		}
+}
+
+
+@media screen and (max-width:478px) {
+	#about #heading1,#course #heading2,#gallery #heading3,#contact #heading4{
+		font-size: 1.6rem;
+	}
+
+	.about .about-right h2{
+		font-size: 1.5rem;
+	}
+	.hero-section .hero-left h1{
+		font-size: 1.6rem;
+	}
+		.contact .contact-right input,
+		textarea ,.contact .contact-left .left-content li p{
+			font-size: 1rem;
+		}
+		.nav {
+			grid-template-columns: .3.8fr 1fr;
+		}
+	
+		
+
+}
+
+@media screen and (max-width:380px) {
+	#about #heading1,#course #heading2,#gallery #heading3,#contact #heading4{
+		font-size: 1.4rem;
+	}
+	.hero-section .hero-left h1{
+		font-size:1.6rem;
+	}
+	.about .about-right h2{
+		font-size: 1.2rem;
+	}
+
+	#about{
+		padding: 3rem 4vw 4rem 4vw !important;	
+	}
+	.about .about-right .social-content {
+		gap: .9rem;
+	
+	}
+	.nav {
+		grid-template-columns: .4fr 1fr;
+	}
+}
+@media screen and (max-width:250px) {
+	#about #heading1,#course #heading2,#gallery #heading3,#contact #heading4,.hero-section .hero-left h1{
+		font-size: 1.4rem;
+	}
+	.about .about-right h2{
+		font-size: 1.2rem;
+	}
+
+	#about{
+		padding: 3rem 4vw 4rem 4vw !important;	
+	}
+	.about .about-right .social-content {
+		gap: .7rem;
+	
+	}
+}
+
+
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="Learn CCC, Tally, and Spoken English with expert-led, career-focused training. Practical skills, real results—get ahead today!">
+	<meta name="author" content="malkiya hitesh">
+	<meta name="keywords"
+		content="CCC,spoken English,tally,computer course,best Computer course,surendranagar in  computer course,sky limet institute,computer">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+		rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="courses.css">
+	<title> sky limit || contact </title>
+</head>
+
+<body>
+	<header>
+		<nav class="nav">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo">
+			</div>
+			<ul id="ul" class="nav-content">
+				<li><i class='bx bx-x cmenu' id="cmenu"></i></li>
+				<li class="nav-item"><a href="index.html">home</a></li>
+				<li class="nav-item"><a href="about.html">about</a></li>
+				<li class="nav-item"><a href="courses.html">course</a></li>
+				<li class="nav-item"><a href="gallery.html">gallery</a></li>
+				<li class="nav-item"><a href="contact.html">contact</a></li>
+			</ul>
+			<i class='bx bx-menu ' id="omenu"></i>
+		</nav>
+		
+	</header>
+	<main>
+		<section id="contact">
+			<h2 id="heading4">contact</h2>
+			<div class="contact">
+				<div class="contact-left">
+					<ul class="left-content">
+						<li>
+							<a href=""><i class='bx bx-map'></i></a>
+							<p>surendranagar , gujarat 363020</p>
+						</li>
+						<li>
+							<i class='bx bx-calendar'></i>
+							<p>monday to firday : 8 : 00 am to 6 : 00 pm</p>
+						</li>
+						<li>
+							<i class='bx bx-calendar'></i>
+							<p>saturday : 9 :00 am to 6 : 00 pm</p>
+						</li>
+						<li>
+							<a href=""><i class='bx bxl-gmail'></i></a>
+							<p>skylimit@gmail.com</p>
+						</li>
+					</ul>
+				</div>
+				<form method="post" action="" class="contact-right" id="form"
+					name="form">
+					<input name="name" type="text" required
+						placeholder="your name......">
+					<input name="email" type="email" required
+						placeholder="your email......">
+					<input name="number" type="number" required
+						placeholder="your number......">
+					<textarea name="message"
+						placeholder="your message......"></textarea>
+					
+					<button class="click">submit</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="social-content">
+			<a href="https://wa.me/9276308828?text=hi%20sir"><i
+					class='bx bxl-whatsapp'></i></i></a>
+			
+			<a href="https://www.instagram.com/skylimit_snr"><i
+					class='bx bxl-instagram'></i></a>
+			
+			<a href="https://youtube.com/@skylimitinstitute5863"><i
+					class='bx bxl-youtube'></i></a>
+			<a href=""><i class='bx bxl-gmail'></i></a>
+			<a href="https://maps.app.goo.gl/xMa4PrYFK9beWzbCA"><i
+					class='bx bx-map'></i></a>
+			
+		</div>
+		<div>
+			<p>Copy right &copy; 2025 by sky limit institute || All right
+				reserved</p>
+		</div>
+		<div>
+			<a href="contact.html"><i class='bx bx-chevron-up-circle'></i> </a>
+		</div>
+		
+	</footer>
+	
+	
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
+	</script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js">
+	</script>
+	<script src="comun.js"></script>
+	<script>
+		const scriptURL =
+			'https://script.google.com/macros/s/AKfycbwplFQNeLE1ocbgnobYUDDBya0YUUR2tospVb3AWsAtY3lW5DbU-fFqVAyLVAZR7Q2y/exec'
+		const form = document.getElementById('form');
+		form.addEventListener('submit', (e) => {
+			e.preventDefault()
+			console.log(e);
+			
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+				.then(response => alert(
+					"Thank you! your form is submitted successfully."))
+				.then(() => { window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+		});
+	</script>
+</body>
+
+</html
