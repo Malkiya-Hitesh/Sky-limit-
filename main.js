@@ -78,7 +78,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwplFQNeLE1ocbgnobYUD
 const form = document.getElementById('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    console.log(e);
+
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => alert("Thank you! your form is submitted successfully."))
